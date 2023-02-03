@@ -1,0 +1,146 @@
+*{ 
+  margin : 0;
+  padding: 0;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+}
+
+.top{
+  height: 90vh;
+  width: 100%;
+  background-color: black;  
+  background-image: url("./assets/bgtop.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+
+.menu{
+  padding-top: 20px;
+  display: grid;  
+  grid-template-columns: 15% 15% 40% 15% 15%;  
+  justify-content: center;
+  align-content: center;  
+  text-align: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.menu button{
+  background-color: transparent;
+  color: gray;
+  margin-left: 20px;
+  /*transition: 0.8s ease-in-out;*/ 
+  border: 1px solid black;
+  cursor:pointer;
+  font-size: 2rem;
+  font-family: sans-serif;
+
+  height: 5rem;
+}
+
+.menu button:hover{
+  color: rgb(243, 108, 59);
+  animation-name: menuanimation;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  
+}
+
+.divlogo{
+  text-align: center;
+  align-content: center;
+}
+
+.logo{
+  width: 40%;
+  cursor: pointer;
+}
+
+.sobre{
+  display: flex;
+  flex-wrap: wrap;
+  height: 60vh;
+  align-items: center;
+  justify-content: start; 
+  margin: 3% 0 0 10%;
+}
+
+.sobre img{
+  width: 400px;
+}
+
+.textorange{
+  font-size: 2rem;
+  color: rgb(243, 108, 59);
+}
+.textosquemsou{ 
+  display: flex;
+  justify-content:  center;  
+  flex-direction: column;   
+  margin-left: 25px;
+  width: 350px;
+  color: rgb(184, 183, 183);
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+.habilidadesbox{
+  top: -30px;
+  position: relative;
+  gap: 2%;  
+  background-color: transparent;
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  align-content: space-around;
+  justify-content: center;
+  margin-bottom: 150px;
+  
+}
+
+.habilidadesbox ol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.projetos{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 90vh;
+  flex-direction: column;
+}
+
+.projetos .boxprojetos{
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  flex-grow: initial;  
+  margin-top: 50px;
+  max-width: 70vw;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.projetos .boxprojetos img{
+ max-width: 400px;
+}
+
+
+@keyframes menuanimation {
+  25% {border-top: 2px solid rgb(243, 108, 59);}
+  50% {border-right:2px solid rgb(243, 108, 59);}
+  75% {border-bottom: 2px solid rgb(243, 108, 59);}
+  100% {border-color:black black black rgb(243, 108, 59);
+      border-left: 2px solid; 
+  }
+}
