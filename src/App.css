@@ -5,6 +5,73 @@
   scroll-behavior: smooth;
 }
 
+@media screen and (max-width: 950px)
+{
+  .menu{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  .menu button{
+    display: none;
+  }
+
+  .sobre{
+    justify-content: center;
+   
+  }
+}
+
+@media screen and (min-width: 950px)
+{
+  .menu{
+  padding: 20px;  
+  display: grid;  
+  grid-template-columns: 15% 15% 40% 15% 15%;  
+  justify-content: center;
+  align-content: center;  
+  text-align: center;
+  align-items: center; 
+  }
+
+  .menu button{
+    background-color: transparent;
+    color: gray;
+    margin-left: 20px;
+    /*transition: 0.8s ease-in-out;*/ 
+    border: 1px solid black;
+    cursor:pointer;
+    font-size: 2rem;
+    font-family: sans-serif;
+
+    height: 5rem;
+  }
+
+  .menu button:hover{
+    color: rgb(243, 108, 59);
+    animation-name: menuanimation;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    
+  }
+
+  .divlogo{
+    text-align: center;
+    align-content: center;
+  }
+
+  .logo{
+    width: 40%;
+    cursor: pointer;
+  }
+
+  .sobre{
+    margin: 3% 0 0 10%;
+  }
+  
+}
+
 .top{
   height: 90vh;
   width: 100%;
@@ -16,61 +83,19 @@
   background-position: top;
 }
 
-.menu{
-  padding-top: 20px;
-  display: grid;  
-  grid-template-columns: 15% 15% 40% 15% 15%;  
-  justify-content: center;
-  align-content: center;  
-  text-align: center;
-  align-items: center;
-  margin-right: 20px;
-}
 
-.menu button{
-  background-color: transparent;
-  color: gray;
-  margin-left: 20px;
-  /*transition: 0.8s ease-in-out;*/ 
-  border: 1px solid black;
-  cursor:pointer;
-  font-size: 2rem;
-  font-family: sans-serif;
-
-  height: 5rem;
-}
-
-.menu button:hover{
-  color: rgb(243, 108, 59);
-  animation-name: menuanimation;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 1;
-  animation-duration: 3s;
-  
-}
-
-.divlogo{
-  text-align: center;
-  align-content: center;
-}
-
-.logo{
-  width: 40%;
-  cursor: pointer;
-}
 
 .sobre{
   display: flex;
   flex-wrap: wrap;
   height: 60vh;
-  align-items: center;
-  justify-content: start; 
-  margin: 3% 0 0 10%;
+  align-items: center;  
+  
 }
 
 .sobre img{
-  width: 400px;
-}
+    width: 400px;
+  }
 
 .textorange{
   font-size: 2rem;
@@ -90,9 +115,9 @@
 .habilidadesbox{
   top: -30px;
   position: relative;
-  gap: 2%;  
+  gap: 3%;  
   background-color: transparent;
-  width: 100vw;
+  width: 90vw;
   height: 10%;
   display: flex;
   align-content: space-around;
@@ -112,7 +137,7 @@
 .projetos{
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   height: 90vh;
   flex-direction: column;
 }

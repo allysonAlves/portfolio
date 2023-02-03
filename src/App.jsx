@@ -73,11 +73,23 @@ function App() {
           <h1>Portfólio</h1>
 
           <div className="boxprojetos">
-            <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
+            <div>
+              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
+            </div>
+
+            <div>
+              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
+            </div> 
+
+            <div>
+              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
+            </div> 
+
+            <div>
+              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
+            </div>     
+                    
+           
           </div>
           
       </section>
