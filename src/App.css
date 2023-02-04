@@ -122,7 +122,6 @@
   display: flex;
   align-content: space-around;
   justify-content: center;
-  margin-bottom: 150px;
   
 }
 
@@ -132,34 +131,60 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+  
 }
 
 .projetos{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   height: 90vh;
   flex-direction: column;
 }
 
+
 .projetos .boxprojetos{
-  width: 70vw;
-  display: flex;
-  flex-direction: row;
-  flex-grow: initial;  
-  margin-top: 50px;
-  max-width: 70vw;
-  align-items: center;
+  margin-top: 100px;
+  width: 90vw;
+  display: flex; 
+  max-width: 80vw;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
   cursor: pointer;
 }
 
-.projetos .boxprojetos img{
- max-width: 400px;
+.projetos H1{
+  margin-top: 100px;
 }
 
+.projectItem{ 
+  border-radius: 10px;
+  text-align: center;
+  background-color: black;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.mensic img{
+  height: 100%;
+  
+}
+
+.fisc img{
+  height: 150%;
+}
+
+.bymovie img{
+  width: 100%;
+}
+
+.contato{
+  height: 90vh;
+  background-color: rgb(43, 42, 42);
+}
 
 @keyframes menuanimation {
   25% {border-top: 2px solid rgb(243, 108, 59);}

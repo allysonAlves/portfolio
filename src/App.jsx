@@ -9,6 +9,10 @@ import iconjavascript from './assets/icon-javascript.png'
 import iconunity from './assets/icon-unity.png'
 import iconreact from './assets/icon-react.png'
 
+import imageAppFisc from './assets/images-app-fisc/app-fisc.jpeg'
+import imageMensic from './assets/jogo-mensic/mensic.jpeg'
+import imageByMovie from './assets/bymovies/bymovie.jpeg'
+
 
 
 function App() {
@@ -51,47 +55,50 @@ function App() {
       <section className='projetos'>
 
         <ul className="habilidadesbox">
-            <ol>
-              <img src={iconjavascript}/>
-              <p>JavaScript</p>
-            </ol>
-            <ol>
-              <img src={iconreact} width={100}/>
-              <p>React</p>
-            </ol>
-            <ol>
-              <img src={iconc}/>
-              <p>C#</p>
-            </ol>
-            <ol>
-              <img src={iconunity}/>
-              <p>Unity</p>
-            </ol>
+          <ol>
+            <img src={iconjavascript}/>
+            <p>JavaScript</p>
+          </ol>
+          <ol>
+            <img src={iconreact} width={100}/>
+            <p>React</p>
+          </ol>
+          <ol>
+            <img src={iconc}/>
+            <p>C#</p>
+          </ol>
+          <ol>
+            <img src={iconunity}/>
+            <p>Unity</p>
+          </ol>
+        
+        </ul>
+
+        <h1>PORTFÓLIO</h1>
+
+        <div className="boxprojetos">
+        
+        
+          <div className='projectItem bymovie'>
+            <img src={imageByMovie}/>
+          </div> 
+
+          <div className='projectItem mensic'>
+            <img src={imageMensic}/>
+          </div> 
+
+          <div className='projectItem fisc'>
+            <img src={imageAppFisc}/>
+          </div>     
+                  
           
-          </ul>
-
-          <h1>Portfólio</h1>
-
-          <div className="boxprojetos">
-            <div>
-              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            </div>
-
-            <div>
-              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            </div> 
-
-            <div>
-              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            </div> 
-
-            <div>
-              <img src='https://www.freecodecamp.org/news/content/images/2022/09/jonatan-pie-3l3RwQdHRHg-unsplash.jpg'/>
-            </div>     
-                    
-           
-          </div>
+        </div>
           
+      </section>
+
+      <section className='contato'>
+
+
       </section>
         
 
