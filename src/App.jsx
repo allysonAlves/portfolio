@@ -9,35 +9,53 @@ import iconjavascript from './assets/icon-javascript.png'
 import iconunity from './assets/icon-unity.png'
 import iconreact from './assets/icon-react.png'
 
-import imageAppFisc from './assets/images-app-fisc/app-fisc.jpeg'
-import imageMensic from './assets/jogo-mensic/mensic.jpeg'
-import imageByMovie from './assets/bymovies/bymovie.jpeg'
+import imageAppFisc from './assets/images-app-fisc/fiscbanner.png'
+import imageMensic from './assets/jogo-mensic/mensicbanner.png'
+import bymoviebanner from './assets/bymovies/bymoviebanner.png'
+import aicarBanner from './assets/aicar/aicarbanner.png'
+import mobileControllerBanner from './assets/mobile-controller/mobilecontrollerbanner.png'
+
 
 
 
 function App() {
   const [count, setCount] = useState(0)
 
-  var portfoliosection = document.getElementsByClassName('projetos');
+  const contatoSection = document.getElementsByClassName('contato');
+  const sobreSection = document.getElementsByClassName('sobre');
+  let portfoliosection = document.getElementsByClassName('projetos');
+  let containerProjetos = document.getElementsByClassName('container-projetos');
 
-  const goToSection = () => {
+  const goToProjetosSection = () => {    
     portfoliosection[0].scrollIntoView();
+  }
+
+  const goToContatoSection = () => {    
+    contatoSection[0].scrollIntoView();
+  }
+
+  const goToSobreSection = () => {    
+    sobreSection[0].scrollIntoView();
+  }
+
+  const scrollprojetos = (value) => {   
+    containerProjetos[0].scrollLeft = containerProjetos[0].scrollLeft + value; 
   }
 
   return (
     <div className="App">
-      <div className='top'>
+      <section className='top'>
         <div className='menu'>          
           <button> Inicio</button>
-          <button> Quem sou</button> 
+          <button onClick={() => goToSobreSection()}> Quem sou</button> 
 
           <div className='divlogo'>
             <img className='logo' src={Logo}/>   
 
           </div>
           
-          <button onClick={() => goToSection()}>Projetos</button>
-          <button>Contato</button>
+          <button onClick={() => goToProjetosSection()}>Projetos</button>
+          <button onClick={() => goToContatoSection()}>Contato</button>
           
         </div>
 
@@ -50,7 +68,7 @@ function App() {
         </div>     
 
         
-      </div>
+      </section>
 
       <section className='projetos'>
 
@@ -76,37 +94,106 @@ function App() {
 
         <h1>PORTFÓLIO</h1>
 
-        <div className="boxprojetos">
-        
-        
-          <div className='projectItem bymovie'>
-            <img src={imageByMovie}/>
-          </div> 
-
-          <div className='projectItem mensic'>
-            <img src={imageMensic}/>
-          </div> 
-
-          <div className='projectItem fisc'>
-            <img src={imageAppFisc}/>
-          </div>     
-                  
-          
+        <div className="container-projetos">
+          <div className='item-box'>                    
+            <img className='item' src={imageMensic}/>
+            <div className='item-information'>
+              <p>Jogo RPG que está sendo desenvolvido em C# com a engine Unity.</p> 
+              <div>
+                <img src={iconc} title='C#'/>
+                <img src={iconunity} title='Unity'/>
+              </div>  
+                                     
+            </div>    
+          </div>
+          <div href='' className='item-box'>          
+            <img className='item' src={imageAppFisc}/>
+            <div className='item-information'>
+              <p>Aplicativo de fiscalização de trânsito com emissão de autos, está sendo desenvolvido em C# com Xamarin Forms.</p>  
+            <div>
+                <img src={iconc} title='C#'/>
+                <img src="https://img.icons8.com/color/48/null/xamarin.png" alt='Xamarin Forms' title='Xamarin Forms'/>
+              </div>    
+                                    
+            </div>
+          </div>
+          <div href='' className='item-box'>            
+            <img className='item' src={bymoviebanner}/>
+            <div className='item-information'>
+              <p>Site de informações sobre filmes consumindo a api IMDB.</p>               
+              <div>               
+                <img src="https://img.icons8.com/color/48/null/react-native.png" title='ReactJS'/>
+                <img src={iconjavascript} title='JavaScript'/>
+              </div>
+              <a href='https://frolicking-kataifi-10a7db.netlify.app/' target="_blank" rel="noopener noreferrer"> Ver mais </a>                                   
+            </div>
+              
+          </div>
+          <div href='' className='item-box'>            
+            <img className='item' src={mobileControllerBanner}/>
+            <div className='item-information'>
+              <p>Asset de controles para jogos mobile no estilo MOBA desenvolvido em C# e Unity, publicado na Unity Asset Store.</p>
+              <div>            
+                <img src={iconc} title='C#'/>
+                <img src={iconunity} title='Unity'/>
+              </div>       
+              <a href='https://assetstore.unity.com/packages/add-ons/aov-mobile-controller-227667' target="_blank" rel="noopener noreferrer"> Ver mais </a>                                
+            </div>
+          </div>
+          <div href='' className='item-box'>            
+            <img className='item' src={aicarBanner}/> 
+            <div className='item-information'>
+              <p>Asset de automação de carros para IA de jogos, desenvolvido em C# e Unity. Publicado na Unity Asset Store.</p>
+              <div>
+                <img src={iconc} title='C#'/>
+                <img src={iconunity} title='Unity'/>
+              </div>    
+              <a href='https://assetstore.unity.com/packages/add-ons/aov-mobile-controller-227667' target="_blank" rel="noopener noreferrer"> Ver mais </a>                  
+            </div>         
+          </div>
+          <button onClick={() => scrollprojetos(250)} className='btn-next'><img src="https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png"/></button>
+          <button onClick={() => scrollprojetos(-250)} className='btn-back'><img src="https://img.icons8.com/ios-filled/50/ffffff/back.png"/></button>
         </div>
           
       </section>
 
       <section className='contato'>
         <h2>Contato</h2>
-
-      </section>
+        <div className='tel-and-mail'>
+          <p>Telefone: (21) 99882-4062</p>
+          <p>Email: allysonalves.dev@gmail.com</p>
+        </div>       
         
+        <div className="boxsociais">
+            <a href='https://www.linkedin.com/in/allyson-alves-877629237/' target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/color/48/null/linkedin-circled--v1.png"/>
+            </a>
 
-      <div className="middle">
-       
+            <a href='https://github.com/allysonAlves' target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/sf-ultralight/50/ffffff/github.png"/>
+            </a>
+            
+            <a href='https://www.instagram.com/allyson.aov/' target="_blank" rel="noopener noreferrer">
+              <img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/>
+            </a>
 
-      </div>
-      
+            
+
+
+        </div>
+        <div className='boxmenuinferior'>
+          <button onClick={() => window.scrollTo(0,0)}>Inicio</button>
+          <button onClick={() => goToSobreSection()}>Quem Sou</button>
+          <button onClick={() => goToProjetosSection()}>Portfólio</button>
+          <button onClick={() => goToContatoSection()}>Contato</button>
+
+        </div>
+
+      </section> 
+
+      <section className='footer'>
+      Copyright © 2023 AOV Dev  
+      </section>  
     </div>
   )
 }
