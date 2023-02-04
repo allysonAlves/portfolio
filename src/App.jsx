@@ -97,7 +97,7 @@ function App() {
       </section>
 
       <section className='contato'>
-
+        <h2>Contato</h2>
 
       </section>
         
