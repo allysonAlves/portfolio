@@ -4,9 +4,24 @@
   font-family: Helvetica;
   scroll-behavior: smooth;
 }
+body{
+  overflow-x: hidden;
+  width: 100vw;
+}
 
 @media screen and (max-width: 950px)
 {
+  .divlogo{
+    text-align: center;
+  }
+  .logo{
+    width: 60%;
+  }
+
+  .top{
+    overflow: hidden;
+  }
+
   .menu{
     display: flex;
     align-content: center;
@@ -19,6 +34,10 @@
   .sobre{
     justify-content: center;
    
+  }
+
+  .sobre img{
+    width: 40%;
   }
 }
 
@@ -69,6 +88,22 @@
   .sobre{
     margin: 3% 0 0 10%;
   }
+
+  .sobre img{
+    width: 400px;
+  }
+
+  .boxmenuinferior{
+    width: 80%;
+    border-top: 1px solid whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    flex-wrap: wrap;
+  }
   
 }
 
@@ -94,9 +129,7 @@
   
 }
 
-.sobre img{
-    width: 400px;
-  }
+
 
 .textorange{
   font-size: 2rem;
@@ -118,7 +151,7 @@
   position: relative;
   gap: 3%;  
   background-color: transparent;
-  width: 90vw;
+  width: 80%;
   height: 10%;
   display: flex;
   align-content: space-around;
@@ -186,10 +219,9 @@
   z-index: 2;
  }
 
-.item {
-  width: 360px;
+.item {  
   flex-shrink: 0;
-  height: 640px;
+  height: 100%;
   
 }
 
@@ -201,8 +233,8 @@
 .item-information{
   position: absolute;
   background-color: transparent;
-  width: 360px;
-  height: 635px;
+  width: 100%;
+  height: 100%;
   top: 0;
   z-index: 1;
   opacity: 0;
@@ -285,15 +317,9 @@
 }
 
 .boxmenuinferior{
-  width: 80%;
-  border-top: 1px solid whitesmoke;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  align-items: center;
-  padding-top: 20px;
+  margin-top: 20px;
 }
+
 .boxmenuinferior button{
   width: 100px;
   background-color: transparent;
