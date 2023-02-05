@@ -37,7 +37,7 @@ body{
   }
 
   .sobre img{
-    width: 40%;
+    width: 50%;
   }
 }
 
@@ -146,17 +146,17 @@ body{
   
 }
 
-.habilidadesbox{
-  margin-top: 20px;
+.projetos ul{ 
   position: relative;
   gap: 3%;  
   background-color: transparent;
-  width: 80%;
-  height: 10%;
+  width: 90vw;
+  height: 15%;
   display: flex;
   align-content: space-around;
   justify-content: center;
-  
+  align-items: center;
+  overflow: hidden;  
 }
 
 .habilidadesbox ol{
@@ -164,7 +164,10 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;  
+}
+
+.habilidadesbox img{
+    max-width: 300px;
 }
 
 .projetos{
@@ -175,6 +178,7 @@ body{
   justify-content: start;
   height: 94vh;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .projetos H1{

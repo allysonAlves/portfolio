@@ -168,11 +168,9 @@ function App() {
             <a href='https://www.linkedin.com/in/allyson-alves-877629237/' target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/color/48/null/linkedin-circled--v1.png"/>
             </a>
-
             <a href='https://github.com/allysonAlves' target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/sf-ultralight/50/ffffff/github.png"/>
             </a>
-            
             <a href='https://www.instagram.com/allyson.aov/' target="_blank" rel="noopener noreferrer">
               <img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/>
             </a>
