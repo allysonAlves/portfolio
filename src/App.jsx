@@ -67,18 +67,13 @@ function App() {
           </div>          
         </div>     
 
-        
-      </section>
-
-      <section className='projetos'>
-
         <ul className="habilidadesbox">
           <ol>
             <img src={iconjavascript}/>
             <p>JavaScript</p>
           </ol>
           <ol>
-            <img src={iconreact} width={100}/>
+            <img src={iconreact}/>
             <p>React</p>
           </ol>
           <ol>
@@ -88,9 +83,12 @@ function App() {
           <ol>
             <img src={iconunity}/>
             <p>Unity</p>
-          </ol>
-        
+          </ol>        
         </ul>
+        
+      </section>
+
+      <section className='projetos'>        
 
         <h1>PORTFÓLIO</h1>
 
@@ -182,8 +180,7 @@ function App() {
         <div className='boxmenuinferior'>
           <button onClick={() => window.scrollTo(0,0)}>Inicio</button>
           <button onClick={() => goToSobreSection()}>Quem Sou</button>
-          <button onClick={() => goToProjetosSection()}>Portfólio</button>
-          <button onClick={() => goToContatoSection()}>Contato</button>
+          <button onClick={() => goToProjetosSection()}>Portfólio</button>          
 
         </div>
 
