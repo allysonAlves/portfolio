@@ -20,7 +20,9 @@ body{
   }
 
   .top{
-    overflow: hidden;
+    padding: 10px;
+    padding-top: 15px;
+  
   }
 
   .menu{
@@ -52,6 +54,7 @@ body{
   align-content: center;  
   text-align: center;
   align-items: center; 
+  width: 95%;
   }
 
   .menu button{
@@ -108,8 +111,7 @@ body{
   
 }
 
-.top{
-  height: 90vh;
+.top{  
   width: 100%;
   background-color: black;  
   background-image: url("./assets/bgtop.png");
@@ -118,15 +120,20 @@ body{
   background-size: 100%;
   background-position: top;
   border-bottom: 5px solid rgb(243, 108, 59);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 85vh;
+  padding-bottom: 70px;
 }
 
 
 
 .sobre{
   display: flex;
-  flex-wrap: wrap;
-  height: 60vh;
-  align-items: center;  
+  flex-wrap: wrap;  
+  align-items: center;
+  width: 90%;
   
 }
 
@@ -147,17 +154,14 @@ body{
   
 }
 
-.top ul{ 
-  top: 70px;
+.projetos ul{ 
+  top: -50px;
   position: relative;
-  gap: 3%;  
-  background-color: transparent;
-  width: 100vw;
-  height: 15%;
+  gap: 3%; 
+  width: 90%;  
   display: flex;
-  justify-content: center;
-  overflow: hidden; 
-  z-index: 200; 
+  justify-content: center;  
+  z-index: 200;
 }
 
 .habilidadesbox ol{
@@ -165,39 +169,51 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;  
+  gap: 7px;;
 }
+
 
 .habilidadesbox img{
   max-width: 90px;
   min-width: 50px;
 }
 
+.habilidadesbox img:hover{
+  opacity: 0.7;
+}
+
 .projetos{  
-  padding-top: 100px;
-  position: relative;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
-  height: 85vh;
+  justify-content: start;  
   flex-direction: column;
-  overflow: hidden;
   background-color: white;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .projetos H1{
-  margin: 30px 0 60px 0;
+  margin: 20px 0 0 0;
   font-size: 3rem;
+  width: 91%;
+  background-color: rgb(53, 53, 53);
+  padding: 10px;
+  color:rgb(243, 108, 59);
+  border-bottom: 3px solid rgb(243, 108, 59);
+  border-right: 3px solid rgb(224, 75, 21);
 }
 
 
 .container-projetos {
-  width: 80%;
+  width: 90%;
   height: 640px;
   display: flex;
+  position: relative;
   overflow-x: auto;
   overflow-y: hidden;  
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: touch;  
+  padding-bottom: 50px;
 }
 
 .container-projetos::-webkit-scrollbar {
@@ -205,10 +221,10 @@ body{
   
 }
 
-.container-projetos .btn-next{
+.projetos .btn-next{
   position: absolute;
-  right: 10%;
-  top:60%;
+  right: 6%;
+  top:53%;
   height: 80px;
   background-color: rgba(46, 46, 46, 0.719);
   color: white;
@@ -216,15 +232,15 @@ body{
   z-index: 2;
 }
 
-.container-projetos .btn-back{
+.projetos .btn-back{
   position: absolute;
-  left: 10%;
-  top:60%;
+  left: 6%;
+  top: 53%;
   height: 80px;
   background-color: rgba(46, 46, 46, 0.719);
   color: white;
   border: none;
-  z-index: 2;
+  z-index: 300;
  }
 
 .item {  
@@ -292,9 +308,8 @@ body{
 }
 
 .contato{
-  height: 50vh;
-  background-color: rgb(31, 30, 30);
-  padding-top: 20px ;
+  padding: 20px 0 20px 0;
+  background-color: rgb(31, 30, 30);  
   justify-content: start;
   gap: 25px;
   align-items: center;
@@ -316,17 +331,17 @@ body{
   color: whitesmoke;
 }
 
-.boxsociais{
-  margin-top: 25px;
+.boxsociais{  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.boxmenuinferior{
-  margin-top: 20px;
+.boxsociais img:hover{
+  opacity: 0.5;
 }
+
 
 .boxmenuinferior button{
   width: 100px;
@@ -343,7 +358,7 @@ body{
 }
 
 .footer{
-  height: 50px;
+  padding: 10px;  
   color: gray;
   text-align: center;
   background-color: black;

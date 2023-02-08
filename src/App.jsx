@@ -54,7 +54,7 @@ function App() {
 
           </div>
           
-          <button onClick={() => goToProjetosSection()}>Projetos</button>
+          <button onClick={() => goToProjetosSection()}>Portfólio</button>
           <button onClick={() => goToContatoSection()}>Contato</button>
           
         </div>
@@ -65,7 +65,11 @@ function App() {
             <p className='textorange'>Olá,</p>
             <p className='textoquemsou'>sou Allyson Alves, estudante de Análise e Desenvolvimento de Sistemas pela faculdade Estácio de Sá, tenho habilidades em desenvolvimento web e mobile, atuo como autônomo desenvolvendo sistemas e assets para a plataforma Unity Asset Store, atualmente com 2 assets publicados. </p>
           </div>          
-        </div>     
+        </div>         
+        
+      </section>
+
+      <section className='projetos'>
 
         <ul className="habilidadesbox">
           <ol>
@@ -84,11 +88,7 @@ function App() {
             <img src={iconunity}/>
             <p>Unity</p>
           </ol>        
-        </ul>
-        
-      </section>
-
-      <section className='projetos'>        
+        </ul>        
 
         <h1>PORTFÓLIO</h1>
 
@@ -149,10 +149,11 @@ function App() {
               <a href='https://assetstore.unity.com/packages/add-ons/aov-mobile-controller-227667' target="_blank" rel="noopener noreferrer"> Ver mais </a>                  
             </div>         
           </div>
-          <button onClick={() => scrollprojetos(250)} className='btn-next'><img src="https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png"/></button>
-          <button onClick={() => scrollprojetos(-250)} className='btn-back'><img src="https://img.icons8.com/ios-filled/50/ffffff/back.png"/></button>
-        </div>
           
+        </div>
+
+        <button onClick={() => scrollprojetos(250)} className='btn-next'><img src="https://img.icons8.com/ios-filled/50/ffffff/forward--v1.png"/></button>
+        <button onClick={() => scrollprojetos(-250)} className='btn-back'><img src="https://img.icons8.com/ios-filled/50/ffffff/back.png"/></button>
       </section>
 
       <section className='contato'>
