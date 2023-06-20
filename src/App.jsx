@@ -203,7 +203,7 @@ function App() {
                 <img src="https://img.icons8.com/color/48/null/react-native.png" title='ReactJS'/>
                 <img src={iconjavascript} title='JavaScript'/>
               </div>
-              <a href='https://frolicking-kataifi-10a7db.netlify.app/' target="_blank" rel="noopener noreferrer"> Ver mais </a>                                   
+              <a href='https://bymovie.netlify.app/' target="_blank" rel="noopener noreferrer"> Ver mais </a>                                   
             </div>
               
           </div>
