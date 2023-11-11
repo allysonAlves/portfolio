@@ -1,0 +1,40 @@
+.div_contact{
+    border-top: 2px solid orange;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.person_data{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    color: gray;
+}
+
+.icons span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.icons a{
+    text-decoration: none;
+    color: gray;
+}
+.icons a:hover{
+    text-decoration: none;
+    color: white;
+}

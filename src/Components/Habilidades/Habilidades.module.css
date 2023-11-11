@@ -1,0 +1,35 @@
+.div_habilidades{
+    width: 100%;
+    display: flex;         
+    position: relative;    
+    justify-content: center;    
+    overflow-x: auto;   
+}
+
+.item img{
+    height: 70px;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.item p{
+    text-align: center;
+    transition: opacity 0.3s;
+}
+.item{
+    scroll-snap-align: start;
+    width: 100px;
+    text-align: center;
+    animation: 1s ease-out show;
+    transition: opacity 0.3s;
+}
+
+@keyframes show{
+    0% {opacity: 0;}
+    100% {opacity: 1;}    
+}
+
+.item:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}

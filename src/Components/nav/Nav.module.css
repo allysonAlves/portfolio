@@ -1,0 +1,16 @@
+.box_logo{
+    width: 140px;
+    overflow: hidden;
+
+}
+
+.logo{
+    object-fit: cover;
+    
+    width: 100%;
+}
+.logo:hover{
+    transition: 0.2s ease-out;
+    filter: drop-shadow(2px 2px 4px orange);
+    cursor: pointer;
+}

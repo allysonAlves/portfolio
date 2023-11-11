@@ -1,0 +1,81 @@
+.div_quemsou{    
+    padding-top: 120px;
+    background-image: url("../../assets/bgtop.png");
+    background-position: center;
+    padding-bottom: 100px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 87vh;    
+}
+
+.image{
+    width: 300px;
+    opacity: 0;
+    transition: 1s;
+    animation: 1s forwards show;
+}
+
+.mostrar{
+    opacity: 1;
+}
+
+.div_text{
+    display: flex;
+    justify-content:  center;  
+    flex-direction: column;
+    width: 380px;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.text_orange{
+    color: orange;
+    font-size: 2rem;
+    animation: 1.5s forwards show;
+}
+
+.sobre{
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;   
+}
+
+.texto{
+    font-size: 0.9rem;   
+    animation: 2s forwards show;
+    color: lightgray;
+}
+
+@media screen and (max-width: 600px) {
+    .div_text{
+        width: auto;
+        padding: 20px;
+        overflow-y: scroll;
+        max-height: 300px;
+        margin-bottom: 20px;
+    }
+    .sobre{
+        gap: 0;
+    }
+
+    .text_orange p{
+        margin-bottom: 0;
+    }
+
+    .image{
+        width: 250px;
+    }
+}
+
+@keyframes show{
+    0% {opacity: 0;}
+    100% {opacity: 1;}    
+}

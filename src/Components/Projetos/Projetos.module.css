@@ -1,0 +1,22 @@
+.projetos{    
+    min-height: 80vh;   
+    color: white;    
+    overflow: hidden;
+    font-size: 20px;    
+    padding: 20px;
+    background-color: #272727;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 50px;
+}
+
+.title{
+    margin-left: 150px;
+}
