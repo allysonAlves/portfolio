@@ -54,7 +54,7 @@ export const my_projects = [
         photo: '/images/rpgtarget/rpgtarget.webp',
         bg_description_color: '',
         description_text_color:'',
-        reverse: false,
+        reverse: true,
         url: 'https://assetstore.unity.com/packages/add-ons/aov-rpg-target-235539/',
         techDetails: [],
     },
