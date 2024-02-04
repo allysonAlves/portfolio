@@ -1,6 +1,16 @@
 
 export const my_projects = [
     {
+        title: 'AOV STREAM',
+        description: 'O React Streaming App é um projeto revolucionário que utiliza React em conjunto com Material UI, React Context e Firebase para proporcionar uma experiência de streaming inovadora. Integrando WebRTC para transmitir dados em tempo real, o aplicativo oferece uma interface moderna e responsiva, gerenciamento eficiente de estado, sinalização de conexões via Firebase e a capacidade de trocar mensagens instantâneas durante a transmissão. Esta plataforma redefine os padrões de streaming, permitindo aos usuários compartilhar e consumir conteúdo ao vivo de maneira envolvente e social.',
+        photo: '/images/aovstream/aovstream.png',
+        bg_description_color: '',
+        description_text_color:'',
+        reverse: true,
+        url: 'https://aovstream.netlify.app/',
+        techDetails: [],
+    },
+    {
         title: 'AovShop',
         description: 'O projeto "AOVShop" é um emocionante projeto de estudo que visa aprofundar e aprimorar as habilidades em desenvolvimento web, design de interface e e-commerce. Este projeto é uma simulação de um e-commerce de eletrônicos para computador, construído utilizando tecnologias como Firebase Firestore, Firebase Authentication, Material UI e Bootstrap, a fim de proporcionar uma experiência de aprendizado prática e contemporânea.',
         photo: '/images/aovshop/aovshop_image.png',

@@ -10,16 +10,19 @@
     border-bottom: 2px solid orangered;
     margin: 50px 0 50px 0;
 }
-.box_image{    
-    overflow: hidden;
-    padding: 15px;  
+.box_image{   
+    padding: 10px;  
     min-width: 100px;  
     max-height: 300px;
+    overflow: hidden;
 }
 .box_image img{    
-   max-width: 500px;  
-   object-fit: scale-down; 
-   max-height: 300px;
+   max-width: 500px; 
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   object-fit: cover; 
+   max-height: 300px;   
 }
 
 .description{    
