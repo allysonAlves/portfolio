@@ -1,9 +1,4 @@
 import React from 'react'
-import iconc from '../../assets/icon-c.png'
-import iconjavascript from '../../assets/icon-javascript.png'
-import iconreact from '../../assets/icon-react.png'
-import firebaseIcon from '../../assets/icon-firebase.png'
-import dotnetIcon from '../../assets/dotnet-icon.png'
 
 import styles from './Habilidades.module.css'
 
@@ -12,25 +7,21 @@ const Habilidades = () => {
     <div>
       <div className={styles.div_habilidades}>
             <div className={styles.item} title='React'>
-              <img src={iconreact}/>
+              <img src='images/icons/icon-react.png' rel='React'/>
               <p>React</p>
             </div>
             <div className={styles.item} title='Javascript'>
-              <img src={iconjavascript}/>
+              <img src='images/icons/icon-javascript.png' rel='Javascript'/>
               <p>JavaScript</p>
             </div>
             <div className={styles.item} title='C#'>
-              <img src={iconc}/>
+              <img src='images/icons/icon-c.png'/>
               <p>C#</p>
             </div>
             <div className={styles.item} title='DotNet'>
-              <img src={dotnetIcon}/>
+              <img src='images/icons/dotnet-Icon.png'/>
               <p>.Net</p>
-            </div> 
-            <div className={styles.item} title='Firebase'>
-              <img src={firebaseIcon}/>
-              <p>Firebase</p>
-            </div>          
+            </div>                    
       </div>
     </div>
   )
