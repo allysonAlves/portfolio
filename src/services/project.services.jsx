@@ -1,3 +1,49 @@
+import { RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
+import { SiWebrtc ,SiFirebase, SiBootstrap } from "react-icons/si";
+import { FaUnity } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
+import { DiJavascript, DiHtml5, DiCss3 } from "react-icons/di";
+import { TbBrandJavascript } from "react-icons/tb";
+import { Tooltip } from "@mui/material";
+
+const stackIcon = {
+    Javascript: {
+        title: 'Javascript',
+        Icon: (props) => <DiJavascript {...props} color="#efd81d"/>
+    },
+    ReactJs: {
+        title: 'React',
+        Icon: (props) => <RiReactjsFill {...props} color="#149eca"/>       
+    },
+    webRTC: {
+        title: 'webRTC',
+        Icon: (props) => <SiWebrtc {...props} color="#019717"/>
+    },
+    Firebase: {
+        title: 'Firebase',
+        Icon: (props) => <SiFirebase {...props} color="#ffca2a"/>
+    },
+    Css: {
+        title: 'Css',
+        Icon: (props) => <DiCss3 {...props} color="#149eca"/>
+    },
+    HTML: {
+        title: 'HTML',
+        Icon: (props) => <DiHtml5 {...props} color="#ed6938"/>
+    },
+    'C#': {
+        title: 'C#',
+        Icon: (props) => <TbBrandCSharp {...props} style={{borderRadius:5, backgroundColor: '#6c287e', padding:1}} color="#fff"/>
+    }, 
+    Unity: {
+        title: 'Unity',
+        Icon: (props) => <FaUnity {...props}/>
+    },
+    bootstrap: {
+        title: 'Bootstrap',
+        Icon: (props) => <SiBootstrap {...props}/>
+    }
+}
 
 export const my_projects = [
     {
@@ -7,8 +53,15 @@ export const my_projects = [
         bg_description_color: '',
         description_text_color:'',
         reverse: true,
-        url: 'https://aovstream.netlify.app/',
-        techDetails: [],
+        url: 'https://aovstream.netlify.app/',      
+        stacks:[
+            stackIcon.HTML,
+            stackIcon.Css,
+            stackIcon.Javascript,
+            stackIcon.ReactJs,
+            stackIcon.Firebase, 
+            stackIcon.webRTC
+        ]
     },
     {
         title: 'AovShop',
@@ -26,7 +79,14 @@ export const my_projects = [
 
         ] ,
         reverse: false,
-        url: 'https://aovshop.netlify.app/'
+        url: 'https://aovshop.netlify.app/',
+        stacks:[
+            stackIcon.HTML,
+            stackIcon.Css,
+            stackIcon.Javascript,
+            stackIcon.ReactJs,
+            stackIcon.Firebase
+        ]
     },
     {
         title: 'ByMovie',
@@ -37,6 +97,12 @@ export const my_projects = [
         reverse: true,
         url: 'https://bymovie.netlify.app/',
         techDetails: [],
+        stacks:[
+            stackIcon.HTML,
+            stackIcon.Css,
+            stackIcon.Javascript,
+            stackIcon.ReactJs,            
+        ]
     },
     {
         title: 'Mensic',
@@ -47,6 +113,10 @@ export const my_projects = [
         reverse: false,
         url: '',
         techDetails: [],
+        stacks:[
+            stackIcon["C#"],
+            stackIcon.Unity
+        ]
     },
     {
         title: 'AOV RPG TARGET',
@@ -57,6 +127,10 @@ export const my_projects = [
         reverse: true,
         url: 'https://assetstore.unity.com/packages/add-ons/aov-rpg-target-235539/',
         techDetails: [],
+        stacks:[
+            stackIcon["C#"],
+            stackIcon.Unity
+        ]
     },
     
 ]

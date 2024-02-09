@@ -48,12 +48,8 @@ function Nav(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        <div style={{width:'100%', padding:20}} className={styles.box_logo}>
-             <img className={styles.logo} src={Logo}/>
-        </div>
-      </Typography>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>     
+      <img className={styles.logo} src={Logo}/>       
       <Divider style={{backgroundColor:'orangeRed'}} />
       <List>
         {navItems.map((item) => (
@@ -71,55 +67,49 @@ function Nav(props) {
 
   return (
    
-        <Box sx={{ display: 'flex' }}>
-        <CssBaseline />
-        <AppBar component="nav">
-            <Toolbar>
-            <IconButton
-                color="inherit"
-                aria-label="open drawer"
-                edge="start"
-                onClick={handleDrawerToggle}
-                sx={{ mr: 2, display: { sm: 'none' } }}
-            >
-                <MenuIcon />
-            </IconButton>
-            <Typography
-                variant="h6"
-                component="div"
-                sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            >
-                <div id='home' className={styles.box_logo} onClick={() => handleNavigate('quemsou')}>
-                    <img className={styles.logo} src={Logo}/>
-                </div>
-            </Typography>
-            <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <AppBar component="nav">
+        <Toolbar>           
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: 'none' } }}>
+              <MenuIcon />
+          </IconButton>     
+          
+          <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'space-between', alignItems: 'center' ,width:'100%'}}>
+            <img style={{height:40}} src={Logo}/>  
+            <Box>
                 {navItems.map((item) => (
                 <Button key={item.title} sx={{ color: '#fff' }} onClick={item.action}>
                     {item.title}
                 </Button>
                 ))}
             </Box>
-            </Toolbar>
-        </AppBar>
-        <nav>
-            <Drawer
-            container={container}
-            variant="temporary"
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            ModalProps={{
-                keepMounted: true, // Better open performance on mobile.
-            }}
-            sx={{
-                display: { xs: 'block', sm: 'none' },
-                '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
-            }}
-            >
-            {drawer}
-            </Drawer>
-        </nav>  
-        </Box>
+          </Box>
+        </Toolbar>
+      </AppBar>
+      
+      <Drawer
+      container={container}
+      variant="temporary"
+      open={mobileOpen}
+      onClose={handleDrawerToggle}
+      ModalProps={{
+          keepMounted: true,
+      }}
+      sx={{
+          display: { xs: 'block', sm: 'none' },
+          '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+      }}
+      >
+      {drawer}
+      </Drawer>
+      
+    </Box>
   );
 }
 
