@@ -59,7 +59,7 @@ const Projetos = () => {
              
               <Stack sx={{mt:1, ml:1}} marginRight={1} justifyContent='end' spacing={1} alignItems='center' direction="row">                 
                 { project.stacks.map(stack => 
-                  <Tooltip title={stack.title}>
+                  <Tooltip key={stack.title} title={stack.title}>
                     <div>
                       <stack.Icon key={stack.title}/>
                     </div>
