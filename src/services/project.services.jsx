@@ -1,10 +1,8 @@
 import { RiJavascriptFill, RiReactjsFill } from "react-icons/ri";
-import { SiWebrtc ,SiFirebase, SiBootstrap } from "react-icons/si";
-import { FaUnity } from "react-icons/fa";
+import { SiWebrtc ,SiFirebase, SiBootstrap, SiTypescript, SiPrisma  } from "react-icons/si";
+import { FaUnity, FaNode } from "react-icons/fa";
 import { TbBrandCSharp } from "react-icons/tb";
 import { DiJavascript, DiHtml5, DiCss3 } from "react-icons/di";
-import { TbBrandJavascript } from "react-icons/tb";
-import { IconButton, Tooltip } from "@mui/material";
 
 const stackIcon = {
     Javascript: {
@@ -42,7 +40,19 @@ const stackIcon = {
     bootstrap: {
         title: 'Bootstrap',
         Icon: (props) => <SiBootstrap {...props}/>
-    }
+    },
+    node: {
+        title: 'Node',
+        Icon: (props) => <FaNode color="#6fa660" size={24} {...props}/>
+    },
+    prisma: {
+        title: 'Prisma',
+        Icon: (props) => <SiPrisma {...props}/>
+    },
+    typescript: {
+        title: 'Typescript',
+        Icon: (props) => <SiTypescript color="#2f74c0" {...props}/>
+    },
 }
 
 export const my_projects = [
@@ -121,6 +131,33 @@ export const my_projects = [
         stacks:[
             stackIcon["C#"],
             stackIcon.Unity
+        ]
+    },
+    {
+        title: 'Pass.In',
+        description: 'pass.in é uma aplicação focada na gestão de participantes para eventos presenciais. Permite aos organizadores criar e gerenciar eventos, oferecendo uma página pública para inscrições. Os participantes podem emitir credenciais via QRCode para check-in no dia do evento. Com regras rigorosas de negócio, como inscrição única por evento e check-in limitado, a aplicação garante a organização eficiente do evento. Desenvolvida com Fastify, Prisma e TypeScript, utiliza banco de dados SQLite e fornece documentação da API via Swagger.',
+        photo: '/images/passin/nlw-node-server.png',     
+        githubUrl: 'https://github.com/allysonAlves/NLW-checkIn-node-server',   
+        deployUrl: '',
+        techDetails: [],
+        stacks:[
+            stackIcon.typescript,   
+            stackIcon.node,
+            stackIcon.prisma,     
+        ]
+    },
+    {
+        title: 'Check.In React',
+        description: 'nlw-checkin-react é a interface front-end da aplicação pass.in, voltada para a gestão de participantes em eventos presenciais. Desenvolvida com React, TypeScript e Vite, a aplicação oferece uma experiência intuitiva e responsiva para organizadores e participantes.',
+        photo: '/images/passin/checkin-react.png',     
+        githubUrl: 'https://github.com/allysonAlves/NLW-checkIn-react',   
+        deployUrl: '',
+        techDetails: [],
+        stacks:[
+            stackIcon.typescript,   
+            stackIcon.ReactJs,
+            stackIcon.Css,     
+            stackIcon.HTML
         ]
     },
     
