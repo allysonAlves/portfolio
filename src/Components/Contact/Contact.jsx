@@ -11,11 +11,11 @@ const Contact = () => {
         <div>
             <h2 className={styles.title}> Contato </h2>
             <div className={styles.person_data}>
-                <div>
+                {/* <div>
                     Telefone: (21) 99882-4062
-                </div>
+                </div> */}
                 <div>
-                    Email: allysonalves.dev@gmail.com                    
+                    E-mail: allysonalves.dev@gmail.com                    
                 </div>
             </div> 
             <div className={styles.icons}>

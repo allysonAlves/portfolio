@@ -1,13 +1,8 @@
-.box_logo{
-    width: 140px;
-    overflow: hidden;
-
-}
 
 .logo{
     object-fit: cover;
-    
-    width: 100%;
+    max-width: 100%;   
+    padding: 20px;
 }
 .logo:hover{
     transition: 0.2s ease-out;

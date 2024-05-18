@@ -6,6 +6,7 @@ import Habilidades from './Components/Habilidades/Habilidades'
 import Projetos from './Components/Projetos/Projetos'
 import { ThemeProvider, createTheme } from '@mui/material'
 import Contact from './Components/Contact/Contact'
+import { Curriculo } from './Components/Curriculo'
 
 const darkTheme = createTheme({
   palette: {
@@ -20,8 +21,9 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <Nav/>
         <QuemSou/>
-        <Habilidades/>
-        <Projetos/>  
+        {/* <Habilidades/> */}
+        <Projetos/>
+        {/* <Curriculo/>   */}
         <Contact/>  
       </ThemeProvider>
     </div>
