@@ -160,5 +160,29 @@ export const my_projects = [
             stackIcon.HTML
         ]
     },
-    
+    {
+        title: 'SHOES APP',
+        description: 'Este projeto é uma aplicação Expo Bare Workflow que implementa o uso do Firebase Cloud Messaging (FCM) para notificações push e notificações locais com agendamento. Com esse projeto, você poderá enviar notificações para dispositivos móveis Android e iOS de forma remota utilizando o FCM, bem como agendar notificações locais para serem exibidas em momentos específicos.',
+        photo: '/images/shoesapp/shoesapp.png',     
+        githubUrl: 'https://github.com/allysonAlves/shoes-app',   
+        deployUrl: '',
+        techDetails: [],
+        stacks:[
+            stackIcon.typescript,   
+            stackIcon.ReactJs,
+            stackIcon.Firebase,            
+        ]
+    },
+    {
+        title: 'TEAMS',
+        description: 'Este é um aplicativo móvel desenvolvido com React Native que oferece funcionalidades para autenticação de usuários, cadastro de grupos e cadastro de alunos dentro desses grupos. O aplicativo utiliza styled-components/native para estilização e navegação Stack para navegar entre telas.',
+        photo: '/images/teams/teams.png',     
+        githubUrl: 'https://github.com/allysonAlves/teams',   
+        deployUrl: '',
+        techDetails: [],
+        stacks:[
+            stackIcon.typescript,   
+            stackIcon.ReactJs,                      
+        ]
+    },    
 ]
