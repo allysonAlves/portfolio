@@ -68,7 +68,7 @@ const QuemSou = () => {
               sequence={[
                 "Allyson Alves",
                 1,
-                () => setTitleProgress((prev) => ({ ...prev, nameDone: true })), 
+                () => setTitleProgress((prev) => ({ ...prev, nameDone: true })),
               ]}
               speed={50}
               cursor={false}
@@ -76,19 +76,18 @@ const QuemSou = () => {
               style={{ fontSize: "3em", color: "orange", lineHeight: 1 }}
             />
           )}
-          {
-            titleProgress.nameDone && 
+          {titleProgress.nameDone && (
             <TypeAnimation
               sequence={[
-                "Desenvolvedor Front-End",
+                "Desenvolvedor Full Stack",
                 1,
                 () => setTitleProgress((prev) => ({ ...prev, iamDone: true })),
               ]}
-              speed={50}              
+              speed={50}
               // repeat={Infinity}
-              style={{ fontSize: "1.5em", marginTop:2 }}
+              style={{ fontSize: "1.5em", marginTop: 2 }}
             />
-          }  
+          )}
 
           <p className={styles.texto}>
             {/* {textPt} */}

@@ -15,7 +15,7 @@ import {
   Stack,
   Box,
   Tooltip,
-  Link
+  Link,
 } from "@mui/material";
 import DescriptionSlider from "./DescriptionSlider/DescriptionSlider";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -25,63 +25,87 @@ import AccordionUsage from "../Accordion";
 
 const Projetos = () => {
   return (
-    <section id="projetos" className={styles.projetos}>     
+    <section id="projetos" className={styles.projetos}>
       <h1 className={styles.title}>Projetos</h1>
       <div className={styles.container}>
         {projects.map((project, index) => (
           <motion.div
             key={project.title}
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <Card sx={{ maxWidth: 345, position: 'relative' }}> 
-              <Stack sx={{position: 'absolute', top:0, right:0, backgroundColor:'#0000009b', width:'100%'}} justifyContent='end' alignItems='center' spacing={1} paddingRight={1} direction="row">
-                { project.githubUrl ? (
-                    <Link sx={{':hover': {opacity:0.75}}} color="inherit" href={project.githubUrl} target="_blank">
-                        <GitHubIcon/>                 
-                    </Link> 
-                  ) : null
-                }
-                {
-                  project.deployUrl ? (
-                    <Link sx={{':hover': {opacity:0.75}}} color="inherit" href={project.deployUrl} target="_blank">
+            <Card sx={{ maxWidth: 345, position: "relative" }}>
+              <Box sx={{ backgroundColor: "#00000040" }}>
+                <Stack
+                  sx={{
+                    width: "100%",
+                    minHeight: 30,
+                  }}
+                  justifyContent="end"
+                  alignItems="center"
+                  spacing={1}
+                  paddingRight={1}
+                  direction="row"
+                >
+                  {project.githubUrl ? (
+                    <Link
+                      sx={{ ":hover": { opacity: 0.75 } }}
+                      color="inherit"
+                      href={project.githubUrl}
+                      target="_blank"
+                    >
+                      <GitHubIcon />
+                    </Link>
+                  ) : null}
+                  {project.deployUrl ? (
+                    <Link
+                      sx={{ ":hover": { opacity: 0.75 } }}
+                      color="inherit"
+                      href={project.deployUrl}
+                      target="_blank"
+                    >
                       <OpenInNewIcon />
                     </Link>
-                  ) : null
-                }
-              </Stack>                
-              <CardMedia
-                sx={{ height: 180 }}
-                image={project.photo}
-                title={project.title}
-              />
-             
-              <Stack sx={{mt:1, ml:1}} marginRight={1} justifyContent='end' spacing={1} alignItems='center' direction="row">                 
-                { project.stacks.map(stack => 
+                  ) : null}
+                </Stack>
+                <CardMedia
+                  component="img"
+                  sx={{ height: 180, objectFit: "scale-down" }}
+                  image={project.photo}
+                  title={project.title}
+                  rel={project.title}
+                />
+              </Box>
+              <Stack
+                sx={{ mt: 1, ml: 1 }}
+                marginRight={1}
+                justifyContent="end"
+                spacing={1}
+                alignItems="center"
+                direction="row"
+              >
+                {project.stacks.map((stack) => (
                   <Tooltip key={stack.title} title={stack.title}>
                     <div>
-                      <stack.Icon key={stack.title}/>
+                      <stack.Icon key={stack.title} />
                     </div>
                   </Tooltip>
-                )}          
+                ))}
               </Stack>
-             
+
               <AccordionUsage
-              title={
-                <Typography variant="h5" component="div">
-                {project.title}
-                </Typography>
-              }
-              body={
-                <Typography                  
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  {project.description}
-                </Typography>
-              }
-              />                
+                title={
+                  <Typography variant="h5" component="div">
+                    {project.title}
+                  </Typography>
+                }
+                body={
+                  <Typography variant="body2" color="text.secondary">
+                    {project.description}
+                  </Typography>
+                }
+              />
               {/* <CardContent>
                 <Typography
                   sx={{ color: "orange", cursor: "pointer" }}
