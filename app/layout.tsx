@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'Allyson Alves — Backend Engineer',
   description:
-    'Backend Engineer especializado em .NET, AWS e sistemas distribuídos. 3+ anos construindo sistemas de alta disponibilidade em produção — do microsserviço ao pipeline event-driven com 15.000+ eventos/dia no Itaú Unibanco.',
+    'Backend Engineer com 3+ anos de experiência em sistemas distribuídos. No Itaú Unibanco (via IBM/CBYK), referência técnica do time em ambiente bancário de alta criticidade — arquitetura event-driven na AWS, 15.000+ eventos/dia.',
   authors: [{ name: 'Allyson Alves', url: siteUrl }],
   keywords: [
     'backend engineer',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Allyson Alves — Backend Engineer',
     description:
-      'Backend Engineer especializado em .NET, AWS e sistemas distribuídos. 3+ anos em produção — pipelines event-driven, EKS, Terraform e ambiente bancário de alta criticidade.',
+      'Backend Engineer com 3+ anos de experiência. No Itaú Unibanco (via IBM/CBYK), referência técnica do time — event-driven na AWS, EKS, Terraform e ambiente bancário de alta criticidade.',
     url: siteUrl,
     siteName: 'Allyson Alves',
     images: [

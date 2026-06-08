@@ -259,11 +259,11 @@ export default function Home() {
           {/* Bio */}
           <section className="rise d2" style={{ marginBottom: '3rem' }}>
             <p style={{ fontSize: '0.9375rem', color: 'var(--text-2)', lineHeight: 1.75, marginBottom: '2rem' }}>
-              Construindo sistemas distribuídos de alta disponibilidade na AWS há mais de 3 anos —
-              do microsserviço ao pipeline event-driven com 15.000+ eventos/dia. No Itaú Unibanco
-              (via IBM/CBYK), atuo como referência técnica do time: decisões de arquitetura, code
-              review e alinhamento com stakeholders. Histórico de reduzir 60% em custos operacionais
-              sem perder resiliência.
+              Desenvolvedor backend há mais de 3 anos, com foco em sistemas distribuídos e alta
+              disponibilidade. No último ano, no Itaú Unibanco (via IBM/CBYK), atuei como referência
+              técnica do time em ambiente bancário de alta criticidade: arquitetura event-driven na
+              AWS com 15.000+ eventos/dia, decisões de design, code review e alinhamento com
+              stakeholders. Histórico de reduzir 60% em custos operacionais sem perder resiliência.
             </p>
 
             {/* Stats */}
