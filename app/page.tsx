@@ -22,18 +22,17 @@ interface Project {
 
 const experiences: Experience[] = [
   {
-    role: 'Backend Engineer · Tech Lead Interino',
-    company: 'CBYK Consultoria',
-    context: 'via IBM · Itaú Unibanco',
+    role: 'Desenvolvedor Backend',
+    company: 'Itaú Unibanco',
+    context: 'via CBYK Consultoria · IBM',
     period: 'Set/2025 – Jun/2026',
     highlights: [
-      'Referência técnica do time: decisões de arquitetura, revisões de código e alinhamento com stakeholders',
-      'Sistema distribuído de enriquecimento de dados — 15.000+ eventos/dia com 99,9% de disponibilidade por 3+ meses em produção',
-      'Redução de 60% em custos de infra (USD 2.000 → 800/mês) via decisões arquiteturais — DynamoDB no lugar de RDS entre outras escolhas',
-      'Pipeline event-driven: Kafka → Lambda → DynamoDB Streams → SNS/SQS, com rastreabilidade de ponta a ponta',
-      'Lambdas em Python e .NET Core: OCR, classificação de documentos via IA, macrocarteira e democratização de dados com Pandas + Athena',
-      'Observabilidade com Datadog APM e rastreamento distribuído em ambiente bancário de alta criticidade',
-      'Infraestrutura como código com Terraform + Kubernetes/Helm, usando módulos internos do banco',
+      'Referência técnica do time: decisões de arquitetura e alinhamento com stakeholders.',
+      'Sistema distribuído de enriquecimento de dados — mais de 100 mil arquivos processados, 15.000+ eventos/dia com 99,9% de disponibilidade por 3+ meses em produção.',
+      'Redução de 60% em custos de infra (USD 2.000 → 800/mês) via decisões arquiteturais — DynamoDB no lugar de RDS entre outras escolhas.',
+      'Pipeline event-driven: Kafka → Lambda → DynamoDB Streams → SNS/SQS, com rastreabilidade de ponta a ponta.',
+      'Lambdas em Python e .NET Core: OCR, classificação de documentos via IA, macrocarteira e democratização de dados com Pandas + Athena.',
+      'Observabilidade com Datadog APM e rastreamento distribuído em ambiente bancário de alta criticidade.'
     ],
     stack: ['.NET Core', 'Python', 'Kafka', 'AWS Lambda', 'DynamoDB', 'Kubernetes', 'Terraform', 'Datadog', 'Athena'],
   },
@@ -42,10 +41,13 @@ const experiences: Experience[] = [
     company: 'Target Work',
     period: 'Jul/2023 – Set/2025',
     highlights: [
-      'API .NET para mobilidade urbana com SignalR e Google Maps API — alta disponibilidade e baixa latência',
-      'Microsserviços com NestJS, autenticação JWT, RabbitMQ e integração AWS (S3, SES, SQS, DynamoDB)',
-      'Sistema de comunicação em tempo real (voz/vídeo) com LiveKit e WebRTC',
-      '10 aplicativos React Native publicados na Play Store e App Store — CI/CD com EAS Build e Azure Pipelines',
+      'Principal referência técnica da empresa para viabilizar novos projetos: avaliar trade-offs e tecnologias necessárias, definir a arquitetura das soluções, conduzir code reviews e elaborou propostas técnicas apresentadas diretamente aos clientes.',
+      'Elaboração e implementação de biblioteca padronizada de function calling para IA embarcada nos sistemas, com pacotes em .NET e React/React Native, acelerando a integração de recursos de IA entre os projetos.',
+      'API .NET para mobilidade urbana com SignalR e Google Maps API — alta disponibilidade e baixa latência.',
+      'Microsserviços com NestJS, autenticação JWT, RabbitMQ e integração AWS (S3, SES, SQS, DynamoDB).',
+      'Sistema de comunicação em tempo real (voz/vídeo) com LiveKit e WebRTC.',
+      '10 aplicativos React Native publicados na Play Store e App Store — CI/CD com EAS Build e Azure Pipelines.',
+      'Configuração de pipelines CI/CD com Azure Pipelines e Docker para deploy em VPS, com orquestração de containers em Kubernetes e empacotamento via Helm.'
     ],
     stack: ['.NET', 'NestJS', 'React Native', 'RabbitMQ', 'TypeScript', 'AWS', 'Docker', 'SignalR'],
   },
@@ -91,7 +93,7 @@ const stackGroups = [
   { category: 'Mensageria', items: ['Apache Kafka', 'RabbitMQ', 'SQS', 'EventBridge'] },
   { category: 'DevOps', items: ['Kubernetes', 'Helm', 'Terraform', 'Docker', 'GitHub Actions'] },
   { category: 'Observabilidade', items: ['Datadog', 'APM', 'Rastreamento distribuído'] },
-  { category: 'IA & Dados', items: ['Claude API', 'Ollama', 'OCR', 'Pandas', 'AWS Athena'] },
+  { category: 'IA & Dados', items: ['Claude API', 'Ollama', 'Claude Code', 'OCR', 'Pandas', 'AWS Athena'] },
 ]
 
 const mono = { fontFamily: "'JetBrains Mono', monospace" } as const
