@@ -406,7 +406,7 @@ export default function Home() {
           {/* CV */}
           <section className="rise d7" style={{ marginBottom: '4rem' }}>
             <SectionLabel>Currículo</SectionLabel>
-            <a href="/curriculos/Curriculo_Backend_Allyson_Alves.pdf" download className="cv-link">
+            <a href="/curriculos/Curriculo_Allyson_Alves.pdf" download className="cv-link">
               <Download size={13} />
               Backend Engineer
             </a>
