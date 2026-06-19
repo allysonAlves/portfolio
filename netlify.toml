@@ -9,3 +9,16 @@
   for = "/curriculos/*"
   [headers.values]
     Content-Disposition = "attachment"
+
+# Os ícones gerados pelo Next saem sem extensão (out/icon, out/apple-icon).
+# Forçamos o Content-Type pra que navegadores e o crawler do Google
+# reconheçam como PNG.
+[[headers]]
+  for = "/icon"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/apple-icon"
+  [headers.values]
+    Content-Type = "image/png"
