@@ -84,6 +84,22 @@ const projects: Project[] = [
     ],
     stack: ['Terraform', 'AWS EKS', 'Kubernetes', 'Helm', 'RDS PostgreSQL', 'Redis', 'SQS', 'DynamoDB', 'ECR'],
   },
+  {
+    title: 'PayFlow — API de Pagamentos',
+    period: 'Jun 2026',
+    github: 'https://github.com/allysonAlves/pay-flow',
+    description:
+      'API de processamento de pagamentos em .NET 8 com Clean Architecture e DDD: agregado Payment com value objects tipados, máquina de estados e eventos de domínio, entrega assíncrona confiável via Outbox.',
+    highlights: [
+      'Clean Architecture em 4 camadas com dependências fluindo para dentro — o Domain não depende de nada externo',
+      'CQRS com MediatR: escritas via agregado, leituras via DTOs com AsNoTracking',
+      'Outbox pattern — OutboxMessage persiste na mesma transação do agregado; processor em background entrega os eventos de forma confiável',
+      'Idempotência com Redis impede reprocessamento de eventos duplicados; gateway simulado configurável (rejeita valores ≥ 10.000)',
+      'Segurança: autenticação por API Key com comparação em tempo constante e validação de webhook via HMAC-SHA256',
+      '33 testes cobrindo domínio, aplicação, infraestrutura e API',
+    ],
+    stack: ['.NET 8', 'ASP.NET Core', 'PostgreSQL', 'Redis', 'EF Core', 'MediatR', 'FluentValidation', 'Docker', 'CQRS', 'DDD'],
+  },
 ]
 
 const stackGroups = [
