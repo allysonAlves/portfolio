@@ -181,3 +181,36 @@ html[data-theme="light"] .glow {
   border-color: var(--bord-hi);
   background: var(--surf-hi);
 }
+
+/* Architecture diagram / clip inside a project card */
+.arch-figure {
+  margin: 0 0 1.125rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  /* No mobile o diagrama mantém largura legível e o card rola na horizontal */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.arch-figure svg {
+  display: block;
+  width: 100%;
+  min-width: 560px; /* piso de legibilidade: abaixo disso a fonte fica ilegível */
+  height: auto;
+  border-radius: 6px;
+}
+.arch-figure img,
+.arch-figure video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+.arch-figure::-webkit-scrollbar { height: 6px; }
+.arch-figure::-webkit-scrollbar-track { background: transparent; }
+.arch-figure::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+.arch-figure::-webkit-scrollbar-thumb:hover { background: var(--bord-hi); }

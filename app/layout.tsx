@@ -31,6 +31,11 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   manifest: '/manifest.json',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
   openGraph: {
     title: 'Allyson Alves — Backend Engineer',
     description:

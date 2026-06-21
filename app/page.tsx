@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, Download } from 'lucide-react'
 import { ThemeToggle } from './ThemeToggle'
+import { AiClassifierDiagram, ToggleMasterDiagram, PayFlowDiagram } from './ArchitectureDiagrams'
 
 interface Experience {
   role: string
@@ -18,6 +19,7 @@ interface Project {
   description: string
   highlights: string[]
   stack: string[]
+  architecture?: React.ReactNode
 }
 
 const experiences: Experience[] = [
@@ -68,6 +70,7 @@ const projects: Project[] = [
       '223 testes unitários, 96% de cobertura — AWS mockada com Moto, sem chamadas de rede reais',
     ],
     stack: ['Python', 'AWS Lambda', 'API Gateway', 'SQS', 'DynamoDB', 'S3', 'Claude API', 'Ollama', 'Terraform', 'Pytest'],
+    architecture: <AiClassifierDiagram />,
   },
   {
     title: 'ToggleMaster — EKS + Terraform',
@@ -83,6 +86,7 @@ const projects: Project[] = [
       'Infra reproduzível do zero em ~20 min — escalamento validado com 200 conexões simultâneas',
     ],
     stack: ['Terraform', 'AWS EKS', 'Kubernetes', 'Helm', 'RDS PostgreSQL', 'Redis', 'SQS', 'DynamoDB', 'ECR'],
+    architecture: <ToggleMasterDiagram />,
   },
   {
     title: 'PayFlow — API de Pagamentos',
@@ -99,6 +103,7 @@ const projects: Project[] = [
       '33 testes cobrindo domínio, aplicação, infraestrutura e API',
     ],
     stack: ['.NET 8', 'ASP.NET Core', 'PostgreSQL', 'Redis', 'EF Core', 'MediatR', 'FluentValidation', 'Docker', 'CQRS', 'DDD'],
+    architecture: <PayFlowDiagram />,
   },
 ]
 
@@ -184,7 +189,7 @@ function ExperienceCard({ role, company, context, period, highlights, stack }: E
   )
 }
 
-function ProjectCard({ title, period, github, association, description, highlights, stack }: Project) {
+function ProjectCard({ title, period, github, association, description, highlights, stack, architecture }: Project) {
   return (
     <article className="proj-card">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '1rem', marginBottom: '0.25rem' }}>
@@ -220,6 +225,12 @@ function ProjectCard({ title, period, github, association, description, highligh
           </li>
         ))}
       </ul>
+
+      {architecture && (
+        <figure className="arch-figure">
+          {architecture}
+        </figure>
+      )}
 
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.375rem' }}>
         {stack.map((tag) => (
