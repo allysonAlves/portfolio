@@ -1,8 +1,13 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import './globals.css'
 import { Providers } from './providers'
 
 const siteUrl = 'https://allysonalves.netlify.app'
+
+// Token do Cloudflare Web Analytics (público). Definido como env var no build
+// da Netlify para não ficar hardcoded. Sem o token, o beacon não é renderizado.
+const cfBeaconToken = process.env.NEXT_PUBLIC_CF_BEACON_TOKEN
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -102,6 +107,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className="antialiased"
       >
         <Providers>{children}</Providers>
+        {cfBeaconToken && (
+          <Script
+            id="cf-web-analytics"
+            src="https://static.cloudflareinsights.com/beacon.min.js"
+            strategy="afterInteractive"
+            data-cf-beacon={`{"token": "${cfBeaconToken}"}`}
+          />
+        )}
       </body>
     </html>
   )
